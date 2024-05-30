@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Roles de Usuario</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Inicio de Sesión</h1>
+    <form class="login-form">
+      <label for="username">Nombre de usuario:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+    <p><a href="#" class="register-link">Registrarse</a></p>
+  </div>
+
+  <div class="register-container hidden">
+    <h1>Registro</h1>
+    <form class="register-form">
+      <label for="new-username">Nombre de usuario:</label>
+      <input type="text" id="new-username" name="new-username" required>
+      <label for="new-password">Contraseña:</label>
+      <input type="password" id="new-password" name="new-password" required>
+      <label for="confirm-password">Confirmar contraseña:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+      <label for="role">Seleccione su rol:</label>
+      <select id="role" name="role" required>
+        <option value="">Seleccione un rol</option>
+        <option value="1">Administrador</option>
+        <option value="2">Usuario Estándar</option>
+      </select>
+      <button type="submit">Registrarse</button>
+    </form>
+    <p><a href="#" class="login-link">Volver al inicio de sesión</a></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
